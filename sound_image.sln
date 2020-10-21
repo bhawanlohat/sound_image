@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sound_image", "sound_image\sound_image.csproj", "{CCED75ED-2FB8-43C4-B3DA-AC1B9B9C5738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCED75ED-2FB8-43C4-B3DA-AC1B9B9C5738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCED75ED-2FB8-43C4-B3DA-AC1B9B9C5738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCED75ED-2FB8-43C4-B3DA-AC1B9B9C5738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCED75ED-2FB8-43C4-B3DA-AC1B9B9C5738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B814C97E-2219-4E62-A9D4-46167CD61E6C}
+	EndGlobalSection
+EndGlobal
