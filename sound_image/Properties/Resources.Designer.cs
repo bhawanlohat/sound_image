@@ -136,5 +136,15 @@ namespace sound_image.Properties {
                 return ResourceManager.GetStream("shoot1", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap target_picture {
+            get {
+                object obj = ResourceManager.GetObject("target_picture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

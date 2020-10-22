@@ -42,7 +42,9 @@
             // 
             // target_picture
             // 
-            this.target_picture.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.target_picture.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.target_picture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("target_picture.BackgroundImage")));
+            this.target_picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.target_picture.Location = new System.Drawing.Point(0, -1);
             this.target_picture.Name = "target_picture";
             this.target_picture.Size = new System.Drawing.Size(463, 342);
@@ -60,6 +62,7 @@
             this.Reload.TabIndex = 1;
             this.Reload.Text = "Reload";
             this.Reload.UseVisualStyleBackColor = false;
+            this.Reload.Click += new System.EventHandler(this.Reload_Click);
             // 
             // Shoot
             // 
@@ -73,6 +76,7 @@
             this.Shoot.TabIndex = 2;
             this.Shoot.Text = "Shoot";
             this.Shoot.UseVisualStyleBackColor = false;
+            this.Shoot.Click += new System.EventHandler(this.Shoot_Click);
             // 
             // panel1
             // 
@@ -98,6 +102,7 @@
             this.Spin.TabIndex = 5;
             this.Spin.Text = "Spin";
             this.Spin.UseVisualStyleBackColor = false;
+            this.Spin.Click += new System.EventHandler(this.Spin_Click);
             // 
             // PLAY
             // 
@@ -126,6 +131,7 @@
             this.Shoot_Away.TabIndex = 3;
             this.Shoot_Away.Text = "Shoot Away";
             this.Shoot_Away.UseVisualStyleBackColor = false;
+            this.Shoot_Away.Click += new System.EventHandler(this.Shoot_Away_Click);
             // 
             // image_n_sound
             // 
@@ -139,6 +145,7 @@
             this.Controls.Add(this.target_picture);
             this.Name = "image_n_sound";
             this.Text = "Images and Sound";
+            this.Load += new System.EventHandler(this.image_n_sound_Load);
             ((System.ComponentModel.ISupportInitialize)(this.target_picture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -17,6 +17,36 @@ namespace sound_image
             InitializeComponent();
         }
 
-     
+        private void Reload_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.reload1);
+            Sound_Object.Play();
+            Spin.Enabled = true;
+            Reload.Enabled = false;
+
+        }
+
+        private void Shoot_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.shoot1);
+            Sound_Object.Play();
+        }
+
+        private void Shoot_Away_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.shoot1);
+            Sound_Object.Play();
+        }
+
+        private void Spin_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.reload1);
+            Sound_Object.Play();
+        }
+
+        private void image_n_sound_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
