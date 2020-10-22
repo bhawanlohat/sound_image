@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace sound_image
 {
-    public partial class Form1 : Form
+    public partial class image_n_sound : Form
     {
-        public Form1()
+        public image_n_sound()
         {
             InitializeComponent();
         }
+
+     
     }
 }
