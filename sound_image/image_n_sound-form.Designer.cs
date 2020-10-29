@@ -36,6 +36,7 @@
             this.Spin = new System.Windows.Forms.Button();
             this.PLAY = new System.Windows.Forms.Button();
             this.Shoot_Away = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.target_picture)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -82,8 +83,8 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BackgroundImage = global::sound_image.Properties.Resources.halloween;
+            this.panel1.Controls.Add(this.Exit);
             this.panel1.Controls.Add(this.Spin);
-            this.panel1.Controls.Add(this.PLAY);
             this.panel1.Controls.Add(this.Shoot_Away);
             this.panel1.Controls.Add(this.Shoot);
             this.panel1.Controls.Add(this.Reload);
@@ -109,7 +110,7 @@
             this.PLAY.BackgroundImage = global::sound_image.Properties.Resources.reload;
             this.PLAY.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PLAY.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PLAY.Location = new System.Drawing.Point(560, 0);
+            this.PLAY.Location = new System.Drawing.Point(534, 42);
             this.PLAY.Name = "PLAY";
             this.PLAY.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.PLAY.Size = new System.Drawing.Size(228, 105);
@@ -118,6 +119,7 @@
             this.PLAY.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.PLAY.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.PLAY.UseVisualStyleBackColor = true;
+            this.PLAY.Click += new System.EventHandler(this.PLAY_Click);
             // 
             // Shoot_Away
             // 
@@ -133,6 +135,18 @@
             this.Shoot_Away.UseVisualStyleBackColor = false;
             this.Shoot_Away.Click += new System.EventHandler(this.Shoot_Away_Click);
             // 
+            // Exit
+            // 
+            this.Exit.BackColor = System.Drawing.Color.Black;
+            this.Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Exit.Location = new System.Drawing.Point(587, 37);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(140, 54);
+            this.Exit.TabIndex = 6;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // image_n_sound
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -142,6 +156,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PLAY);
             this.Controls.Add(this.target_picture);
             this.Name = "image_n_sound";
             this.Text = "Images and Sound";
@@ -161,6 +176,7 @@
         private System.Windows.Forms.Button Spin;
         private System.Windows.Forms.Button PLAY;
         private System.Windows.Forms.Button Shoot_Away;
+        private System.Windows.Forms.Button Exit;
     }
 }
 
