@@ -16,7 +16,7 @@ namespace sound_image
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new image_n_sound());
+            Application.Run(new welcome_form());
         }
     }
 }

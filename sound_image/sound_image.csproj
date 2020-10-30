@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="welcome_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome_form.Designer.cs">
+      <DependentUpon>welcome_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="image_n_sound-form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="welcome_form.resx">
+      <DependentUpon>welcome_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="image_n_sound-form.resx">
       <DependentUpon>image_n_sound-form.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +116,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\target_picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oneround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

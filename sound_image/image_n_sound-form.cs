@@ -91,7 +91,7 @@ namespace sound_image
             Shoot_Away.Enabled = false;
             Shoot.Enabled = false;
             Spin.Enabled = false;
-            Exit.Enabled = true;
+
         }
 
         private void Spin_Click(object sender, EventArgs e)
@@ -112,9 +112,7 @@ namespace sound_image
             Shoot_Away.Enabled = false;
             Shoot.Enabled = false;
             Spin.Enabled = false;
-            Reload.Enabled = false;
-            PLAY.Enabled = true;
-            Exit.Enabled = true;
+            Reload.Enabled = true;
         }
     }
 }

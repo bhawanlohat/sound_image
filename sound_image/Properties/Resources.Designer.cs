@@ -92,6 +92,26 @@ namespace sound_image.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Instruction {
+            get {
+                object obj = ResourceManager.GetObject("Instruction", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oneround {
+            get {
+                object obj = ResourceManager.GetObject("oneround", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap panelhalloween {
             get {
                 object obj = ResourceManager.GetObject("panelhalloween", resourceCulture);
@@ -143,6 +163,16 @@ namespace sound_image.Properties {
         internal static System.Drawing.Bitmap target_picture {
             get {
                 object obj = ResourceManager.GetObject("target_picture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap welcome {
+            get {
+                object obj = ResourceManager.GetObject("welcome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
