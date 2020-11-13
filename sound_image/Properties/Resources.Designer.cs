@@ -72,29 +72,9 @@ namespace sound_image.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap halloween {
+        internal static System.Drawing.Bitmap headshot {
             get {
-                object obj = ResourceManager.GetObject("halloween", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hallowen {
-            get {
-                object obj = ResourceManager.GetObject("hallowen", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Instruction {
-            get {
-                object obj = ResourceManager.GetObject("Instruction", resourceCulture);
+                object obj = ResourceManager.GetObject("headshot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -112,9 +92,9 @@ namespace sound_image.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap panelhalloween {
+        internal static System.Drawing.Bitmap pointingun {
             get {
-                object obj = ResourceManager.GetObject("panelhalloween", resourceCulture);
+                object obj = ResourceManager.GetObject("pointingun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -154,16 +134,6 @@ namespace sound_image.Properties {
         internal static System.IO.UnmanagedMemoryStream shoot1 {
             get {
                 return ResourceManager.GetStream("shoot1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap target_picture {
-            get {
-                object obj = ResourceManager.GetObject("target_picture", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

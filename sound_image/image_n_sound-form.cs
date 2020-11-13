@@ -9,110 +9,105 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sound_image
+namespace sound_image//project name
 {
-    public partial class image_n_sound : Form
+    public partial class image_n_sound : Form// from name 
     {
-        int reload, spin, luck = 0;
+        logicalclass logical_obj = new logicalclass();// creating object
+
 
         public image_n_sound()
         {
             InitializeComponent();
         }
 
-        private void Reload_Click(object sender, EventArgs e)
+        private void Reload_Click(object sender, EventArgs e)//code when user click the button reload
         {
-            reload = 1;
+            ;
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.reload1);
-            Sound_Object.Play();
-            Spin.Enabled = true;
-            Reload.Enabled = false;
+            Sound_Object.Play();//this code is to add sound & images 
+            Spin.Enabled = true;//user able to access this button
+            Reload.Enabled = false;//user not able to access this button
 
         }
 
-        private void Shoot_Click(object sender, EventArgs e)
+        private void Shoot_Click(object sender, EventArgs e)//when user will click the shoot button
         {
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.shoot1);
-            Sound_Object.Play();
-            if (reload == spin)
+            Sound_Object.Play();// this code is to upload images and sound
+            if (logical_obj.shoot_bullet() == 0) // shoot_bullet will check the object of logical class  value and then give the out put
             {
-                MessageBox.Show("You LOOSE the GAME ");
-            }
-            else if (spin == 6)
-            {
-                spin = 1;
+                MessageBox.Show("TRY your LUCK next time");//when the value is equal to zero then this message shown on screen
             }
             else
             {
-                spin++;
+                MessageBox.Show("empty fire");// when the value of object is not equal to zero
             }
         }
 
-        private void Shoot_Away_Click(object sender, EventArgs e)
+        private void Shoot_Away_Click(object sender, EventArgs e)//action when button will click
         {
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.shoot1);
-            Sound_Object.Play();
-
-            if (luck < 1)
+            Sound_Object.Play();//code for images and sound upload
+            if (logical_obj.luck < 2)// user can shoot away two times only
             {
-                if (reload == spin)//
+                if (logical_obj.shoot == 0)//check value of logical object shoot 
                 {
-                    MessageBox.Show("You won the GAME");
-                }
-                else if (spin == 6)
-                {
-                    spin = 1;
+                    MessageBox.Show("You won the game");//when equal to zero  then user will won the game
+                    Shoot.Enabled = false;//user not able to access this button
+                    Shoot_Away.Enabled = false; //user not able to access this button
                 }
                 else
                 {
-                    spin++;
+                    logical_obj.luck++;// increment the value of luck by 1
+                    if (logical_obj.luck == 2)
+                    {
+                        MessageBox.Show("TRY your LUCK one more time");//show the message as a string 
+                        Shoot.Enabled = false;//user not able to access this button
+                        Shoot_Away.Enabled = false;//user not able to access this button
+                    }
+                    else
+                    {
+                        MessageBox.Show("miss fire");//show the message on screen as a string
+                    }
                 }
-                luck++;
+            }
 
-            }
-            else
-            {
-                Shoot_Away.Enabled = false;
-                MessageBox.Show("you loose GAME");
-            }
 
         }
 
-        private void Exit_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)// code when click exit button
         {
-            Application.Exit();
+            Application.Exit();//this code will help user to close the application
         }
 
         private void PLAY_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
             this.InitializeComponent();
-            Reload.Enabled = true;
-            Shoot_Away.Enabled = false;
-            Shoot.Enabled = false;
-            Spin.Enabled = false;
+            Reload.Enabled = true;//user able to access this button
+            Shoot_Away.Enabled = false;//user not able to access this button
+            Shoot.Enabled = false;//user not able to access this button
+            Spin.Enabled = false;//user not able to access this button
 
         }
 
-        private void Spin_Click(object sender, EventArgs e)
+        private void Spin_Click(object sender, EventArgs e)//code when button  click
         {
 
+            MessageBox.Show(logical_obj.spin_chamber().ToString());//this code will show the spin number on screen with the help string function
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.reload1);
-            Sound_Object.Play();
-            Random rnd = new Random();
-            //spin = rnd.Next(1, 7);
-            spin = 3;
-            MessageBox.Show(spin.ToString());
-            Shoot_Away.Enabled = true;
-            Shoot.Enabled = true;
+            Sound_Object.Play();//code to upload images and sound
+            Shoot_Away.Enabled = true;//user able to access this button
+            Shoot.Enabled = true;//user  able to access this button
         }
 
         private void image_n_sound_Load(object sender, EventArgs e)
         {
-            Shoot_Away.Enabled = false;
-            Shoot.Enabled = false;
-            Spin.Enabled = false;
-            Reload.Enabled = true;
+            Shoot_Away.Enabled = false;//user not able to access this button
+            Shoot.Enabled = false;//user not able to access this button
+            Spin.Enabled = false;//user not able to access this button
+            Reload.Enabled = true;//user able to access this button
         }
     }
 }

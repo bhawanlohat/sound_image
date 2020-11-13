@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(image_n_sound));
             this.target_picture = new System.Windows.Forms.PictureBox();
             this.Reload = new System.Windows.Forms.Button();
             this.Shoot = new System.Windows.Forms.Button();
@@ -40,11 +39,11 @@
             // target_picture
             // 
             this.target_picture.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.target_picture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("target_picture.BackgroundImage")));
+            this.target_picture.BackgroundImage = global::sound_image.Properties.Resources.pointingun;
             this.target_picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.target_picture.Location = new System.Drawing.Point(0, -1);
+            this.target_picture.Location = new System.Drawing.Point(1, 5);
             this.target_picture.Name = "target_picture";
-            this.target_picture.Size = new System.Drawing.Size(463, 342);
+            this.target_picture.Size = new System.Drawing.Size(274, 318);
             this.target_picture.TabIndex = 0;
             this.target_picture.TabStop = false;
             // 
@@ -53,7 +52,7 @@
             this.Reload.BackColor = System.Drawing.Color.Black;
             this.Reload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Reload.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Reload.Location = new System.Drawing.Point(66, 367);
+            this.Reload.Location = new System.Drawing.Point(603, 120);
             this.Reload.Name = "Reload";
             this.Reload.Size = new System.Drawing.Size(108, 58);
             this.Reload.TabIndex = 1;
@@ -67,11 +66,11 @@
             this.Shoot.BackgroundImage = global::sound_image.Properties.Resources.shoot;
             this.Shoot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Shoot.ForeColor = System.Drawing.Color.White;
-            this.Shoot.Location = new System.Drawing.Point(564, 357);
+            this.Shoot.Location = new System.Drawing.Point(12, 343);
             this.Shoot.Name = "Shoot";
-            this.Shoot.Size = new System.Drawing.Size(115, 58);
+            this.Shoot.Size = new System.Drawing.Size(108, 58);
             this.Shoot.TabIndex = 2;
-            this.Shoot.Text = "Shoot";
+            this.Shoot.Text = "Shoot on HEAD";
             this.Shoot.UseVisualStyleBackColor = false;
             this.Shoot.Click += new System.EventHandler(this.Shoot_Click);
             // 
@@ -79,9 +78,9 @@
             // 
             this.Spin.BackColor = System.Drawing.Color.Black;
             this.Spin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Spin.Location = new System.Drawing.Point(220, 367);
+            this.Spin.Location = new System.Drawing.Point(603, 223);
             this.Spin.Name = "Spin";
-            this.Spin.Size = new System.Drawing.Size(140, 58);
+            this.Spin.Size = new System.Drawing.Size(108, 58);
             this.Spin.TabIndex = 5;
             this.Spin.Text = "Spin";
             this.Spin.UseVisualStyleBackColor = false;
@@ -93,9 +92,9 @@
             this.Shoot_Away.BackgroundImage = global::sound_image.Properties.Resources.shoot;
             this.Shoot_Away.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Shoot_Away.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Shoot_Away.Location = new System.Drawing.Point(399, 357);
+            this.Shoot_Away.Location = new System.Drawing.Point(167, 343);
             this.Shoot_Away.Name = "Shoot_Away";
-            this.Shoot_Away.Size = new System.Drawing.Size(114, 58);
+            this.Shoot_Away.Size = new System.Drawing.Size(108, 58);
             this.Shoot_Away.TabIndex = 3;
             this.Shoot_Away.Text = "Shoot Away";
             this.Shoot_Away.UseVisualStyleBackColor = false;
@@ -106,8 +105,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImage = global::sound_image.Properties.Resources.reload;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Reload);
             this.Controls.Add(this.Shoot);
