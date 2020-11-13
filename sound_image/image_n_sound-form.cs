@@ -14,7 +14,7 @@ namespace sound_image//project name
     public partial class image_n_sound : Form// from name 
     {
         logicalclass logical_obj = new logicalclass();// creating object
-
+        private object logic_obj;
 
         public image_n_sound()
         {
@@ -23,7 +23,7 @@ namespace sound_image//project name
 
         private void Reload_Click(object sender, EventArgs e)//code when user click the button reload
         {
-            ;
+            logical_obj.Reload_chamber();
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(sound_image.Properties.Resources.reload1);
             Sound_Object.Play();//this code is to add sound & images 
             Spin.Enabled = true;//user able to access this button

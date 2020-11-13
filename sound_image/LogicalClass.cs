@@ -13,7 +13,7 @@ namespace sound_image//project name
         public int shoot;//declare the datatype
         public int luck = 1;//declare the datatype and assigning the value 
 
-        public void reload_chamber()//function  for reload the camber
+        public void Reload_chamber()//function  for reload the camber
         {
             reload = 1;
         }
